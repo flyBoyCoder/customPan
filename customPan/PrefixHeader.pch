@@ -1,0 +1,28 @@
+//
+//  PrefixHeader.pch
+//  customPan
+//
+//  Created by T on 15/7/1.
+//  Copyright (c) 2015年 benbun. All rights reserved.
+//
+
+#ifndef customPan_PrefixHeader_pch
+#define customPan_PrefixHeader_pch
+
+#ifdef DEBUG
+#define BBLog(...) NSLog(__VA_ARGS__)
+#else
+#define BBLog(...)
+#endif
+
+#import "BBNoticeConst.h"
+
+#define BBColor(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+
+/**
+ * 屏幕尺寸
+ */
+#define kScreenW [UIScreen mainScreen].bounds.size.width
+#define kScreenH [UIScreen mainScreen].bounds.size.height
+
+#endif
